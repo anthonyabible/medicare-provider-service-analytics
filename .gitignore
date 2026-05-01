@@ -1,0 +1,13 @@
+# Optional ignores
+*.pbix
+*.csv
+*.zip
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+data/raw/*
+!data/raw/.gitkeep

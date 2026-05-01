@@ -1,0 +1,35 @@
+{
+  "expected_filename": "MUP_PHY_R25_P05_V20_D23_Prov_Svc.csv",
+  "clean_record_count": 9660581,
+  "distinct_providers": 1175272,
+  "distinct_states": 62,
+  "distinct_hcpcs_codes": 6405,
+  "estimated_total_medicare_payment": 93721075813.28165,
+  "estimated_total_standardized_payment": 92805678156.23853,
+  "national_standardized_payment_per_service": 35.07941758655572,
+  "ct_standardized_payment_per_service": 42.89103482825293,
+  "ct_rank_by_standardized_payment_per_service": 10,
+  "top_provider_type_by_payment": {
+    "label": "Clinical Laboratory",
+    "value": 7365997003.2130375
+  },
+  "top_hcpcs_by_payment": {
+    "label": "99214 - Established patient office or other outpatient visit, 30-39 minutes",
+    "value": 8232146356.509938
+  },
+  "drug_group_with_larger_payment_share": "Non-Drug",
+  "higher_standardized_payment_setting": "Facility",
+  "ct_top_provider_type_by_payment": {
+    "label": "Ophthalmology",
+    "value": 84616489.8699443
+  },
+  "best_above_baseline_combo": {
+    "provider_type": "Ambulatory Surgical Center",
+    "hcpcs_label": "66984 - Removal of cataract with insertion of prosthetic lens",
+    "score": 734659584.4555105,
+    "combo_standardized_payment_per_service": 848.2802579318601,
+    "hcpcs_baseline_standardized_payment_per_service": 223.86229011277663,
+    "services": 1176551.0
+  },
+  "ct_vs_national_pct_diff": 22.268377809929852
+}
