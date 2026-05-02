@@ -1,17 +1,9 @@
 # Executive Summary
 
-This project was designed as a flagship entry-level analytics portfolio piece.
+This project analyzed the official 2023 CMS Medicare physician and other practitioners provider-service file using a cleaned, weighted workflow designed for SQL and Power BI. The filtered analytical dataset retained 9,660,581 high-usable rows spanning 1,175,272 providers and 6,405 HCPCS codes.
 
-## Why it is strong
-- Uses a real CMS public dataset rather than a toy dataset
-- Shows a disciplined SQL pipeline from staging to reporting layer
-- Uses weighted and standardized metrics for cleaner benchmarking
-- Connects analysis to business questions
-- Includes recruiter, resume, LinkedIn, and interview packaging
+Estimated Medicare payment across the cleaned analytical dataset totals $93.72B, while estimated standardized payment totals $92.81B. The largest payment specialty is **Clinical Laboratory**, and the largest payment procedure is **99214 - Established patient office or other outpatient visit, 30-39 minutes**.
 
-## Best fit roles
-- Data Analyst
-- Reporting Analyst
-- BI Analyst
-- Healthcare Analytics Analyst
-- Operations Analyst
+For Connecticut benchmarking, standardized payment per service is $42.89, versus a national benchmark of $35.08. Connecticut ranks #10 nationally on standardized payment per service.
+
+The outputs in this folder can be pasted directly into the README and used as source tables for a one-page Power BI dashboard.

@@ -1,3 +1,0 @@
-# One-Page Project Summary
-
-This project analyzes the CMS Medicare Physician & Other Practitioners provider-service file using MySQL and Power BI. The workflow starts with a raw staging table, applies validation and typing, creates derived financial measures, and then exposes dashboard-ready reporting views. The analysis is designed to answer business-friendly questions about specialty-level payment drivers, procedure mix, place-of-service differences, and Connecticut versus national performance. The final output is a one-page dashboard plus recruiter-ready documentation that makes the project easy to review quickly.
