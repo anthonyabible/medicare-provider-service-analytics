@@ -2,7 +2,23 @@
 
 Healthcare analytics portfolio project using the official CMS Medicare Physician & Other Practitioners by Provider and Service dataset.
 
-This project analyzes Medicare provider-service payment patterns using Python, DuckDB/SQL-style analysis, and Power BI-ready outputs. The goal is to identify payment drivers, high-volume provider types, top HCPCS service codes, state-level standardized payment differences, and Connecticut vs. national benchmarks.
+This project analyzes Medicare provider-service payment patterns using Python, Pandas, DuckDB SQL, and Power BI-ready outputs. The goal is to identify payment drivers, high-volume provider types, top HCPCS service codes, state-level standardized payment differences, and Connecticut vs. national benchmarks.
+
+---
+
+## At a Glance
+
+| Category | Detail |
+|---|---|
+| Dataset | CMS Medicare Physician & Other Practitioners by Provider and Service, 2023 |
+| Records analyzed | 9,660,581 clean provider-service records |
+| Distinct providers | 1,175,272 |
+| States/territories | 62 |
+| HCPCS service codes | 6,405 |
+| Tools | Python, Pandas, DuckDB SQL, Power BI |
+| Focus | Medicare payment drivers, HCPCS trends, provider types, Connecticut benchmarks |
+
+---
 
 ## Project Highlights
 
@@ -11,21 +27,35 @@ This project analyzes Medicare provider-service payment patterns using Python, D
 - Reviewed 6,405 HCPCS service codes.
 - Estimated total Medicare payment was approximately $93.72B.
 - Estimated standardized Medicare payment was approximately $92.81B.
-- Connecticut standardized payment per service was $42.89 compared with the national average of $35.08.
+- Connecticut standardized payment per service was $42.89, compared with the national average of $35.08.
 - Connecticut ranked 10th by standardized payment per service.
 - Connecticut was approximately 22.27% above the national standardized payment-per-service benchmark.
 - Top provider type by Medicare payment: Clinical Laboratory, approximately $7.37B.
 - Top HCPCS service by payment: 99214, established patient office/outpatient visit, approximately $8.23B.
 - Connecticut’s top provider type by Medicare payment: Ophthalmology, approximately $84.62M.
 
+---
+
+## Insights
+
+- Clinical Laboratory was the largest provider type by Medicare payment, showing that lab services were a major national payment driver in the 2023 provider-service file.
+- HCPCS 99214 was the top service by payment, showing the importance of established patient office and outpatient visits in Medicare spending.
+- Connecticut’s standardized payment per service was 22.27% above the national benchmark, suggesting a higher payment-per-service profile compared with the full dataset.
+- Connecticut’s top provider type by payment was Ophthalmology, giving the project a state-level market analysis angle rather than only a national summary.
+- The project connects raw public healthcare data to dashboard-ready outputs that can support payment benchmarking, provider mix review, and market-level analysis.
+
+---
+
 ## Tools Used
 
 - Python
 - Pandas
-- DuckDB / SQL-style analysis
+- DuckDB SQL
 - Power BI
 - GitHub
 - Official CMS public-use data
+
+---
 
 ## Dashboard and Visual Outputs
 
@@ -33,36 +63,29 @@ This project includes Power BI-ready output files and generated chart assets for
 
 ### Dashboard Mockup
 
-![Dashboard Mockup](dashboard_mockup.png)
+<img src="dashboard_mockup.png" alt="Dashboard Mockup" width="850">
 
 ### Top Provider Types by Medicare Payment
 
-![Top Provider Types by Medicare Payment](top_provider_types.png)
+<img src="top_provider_types.png" alt="Top Provider Types by Medicare Payment" width="850">
 
 ### Top HCPCS Services by Medicare Payment
 
-![Top HCPCS Services by Medicare Payment](top_hcpcs.png)
+<img src="top_hcpcs.png" alt="Top HCPCS Services by Medicare Payment" width="850">
 
 ### State Standardized Payment Rankings
 
-![State Standardized Payment Rankings](state_rankings.png)
+<img src="state_rankings.png" alt="State Standardized Payment Rankings" width="850">
 
 ### Project Workflow
 
-![Project Workflow](workflow_diagram.png)
+<img src="workflow_diagram.png" alt="Project Workflow Diagram" width="850">
 
 ### Data Model / Schema Mockup
 
-![Schema Mockup](schema_mockup.png)
+<img src="schema_mockup.png" alt="Schema Mockup" width="850">
 
-Included visual assets:
-
-- `top_provider_types.png`
-- `top_hcpcs.png`
-- `state_rankings.png`
-- `dashboard_mockup.png`
-- `workflow_diagram.png`
-- `schema_mockup.png`
+---
 
 ## Dataset
 
@@ -70,48 +93,7 @@ The project uses the official CMS Medicare Physician & Other Practitioners by Pr
 
 `MUP_PHY_R25_P05_V20_D23_Prov_Svc.csv`
 
-The raw CSV is not included in this repository because it is several gigabytes in size.
+The raw CSV is not included in this repository because it is several gigabytes in size. To reproduce the analysis, download the official CMS 2023 CSV and place it locally in:
 
-To reproduce the analysis, download the official CMS 2023 CSV and place it in:
-
-`data/raw/`
-
-## Project Workflow
-
-1. Download the official CMS provider-service CSV.
-2. Place the raw CSV in `data/raw/`.
-3. Run the Python automation script.
-4. Generate summary outputs and Power BI-ready CSV files.
-5. Build a Power BI dashboard using the generated outputs.
-6. Review national and Connecticut-level payment benchmarks.
-
-## Key Files
-
-- `auto_finish_from_csv.py` - Processes the CMS CSV and generates summary outputs.
-- `key_findings.md` - Generated findings from the project.
-- `executive_summary.md` - Executive summary of the analysis.
-- `summary_metrics.json` - Main project metrics.
-- `top_provider_types.csv` - Power BI-ready provider type output.
-- `top_hcpcs.csv` - Power BI-ready HCPCS output.
-- `state_standardized_payment_per_service.csv` - State benchmark output.
-- `ct_provider_types.csv` - Connecticut-specific provider output.
-- `requirements.txt` - Python package requirements.
-
-## Business Value
-
-This project demonstrates the ability to work with large public healthcare datasets, automate analytical workflows, generate business-readable findings, and build dashboard-ready outputs for decision support.
-
-The analysis helps identify:
-
-- Which provider types drive the largest Medicare payments.
-- Which HCPCS service codes account for the largest payment totals.
-- How Connecticut compares with national standardized payment benchmarks.
-- Which Connecticut provider categories represent major Medicare payment areas.
-
-## Reproducibility
-
-To reproduce the project locally:
-
-```bash
-pip install -r requirements.txt
-python auto_finish_from_csv.py --csv data/raw/MUP_PHY_R25_P05_V20_D23_Prov_Svc.csv --out outputs
+```text
+data/raw/
