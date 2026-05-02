@@ -29,12 +29,31 @@ This project analyzes Medicare provider-service payment patterns using Python, D
 
 ## Dashboard and Visual Outputs
 
-This project includes Power BI-ready output files and generated chart assets for:
+This project includes Power BI-ready output files and generated chart assets for provider type, HCPCS service, state ranking, and Connecticut benchmark analysis.
 
-- Top provider types by Medicare payment
-- Top HCPCS services by Medicare payment
-- State standardized payment per service
-- Connecticut provider types by Medicare payment
+### Dashboard Mockup
+
+![Dashboard Mockup](dashboard_mockup.png)
+
+### Top Provider Types by Medicare Payment
+
+![Top Provider Types by Medicare Payment](top_provider_types.png)
+
+### Top HCPCS Services by Medicare Payment
+
+![Top HCPCS Services by Medicare Payment](top_hcpcs.png)
+
+### State Standardized Payment Rankings
+
+![State Standardized Payment Rankings](state_rankings.png)
+
+### Project Workflow
+
+![Project Workflow](workflow_diagram.png)
+
+### Data Model / Schema Mockup
+
+![Schema Mockup](schema_mockup.png)
 
 Included visual assets:
 
